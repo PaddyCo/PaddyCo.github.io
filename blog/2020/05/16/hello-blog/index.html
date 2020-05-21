@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <meta property="og:image" content="https://picsum.photos/1000/300?random=Hello-blog" />
+        
+
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+        <title>It&#39;s PaddyCo - Hello blog</title>
+    </head>
+    <body>
+        <div class="navbar">
+  <div class="navbar__wrapper">
+    <div class="navbar__header">
+      <h1 class="navbar__title"><a href="/">It&#39;s PaddyCo</a></h1>
+      <a class="navbar__toggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><g><path class="top-bar" d="M64 11.5A2.5 2.5 0 0061.5 9h-59A2.5 2.5 0 000 11.5v5A2.5 2.5 0 002.5 19h59a2.5 2.5 0 002.5-2.5v-5z"/><path class="middle-bar" d="M64 29.5a2.5 2.5 0 00-2.5-2.5h-59A2.5 2.5 0 000 29.5v5A2.5 2.5 0 002.5 37h59a2.5 2.5 0 002.5-2.5v-5z"/><path class="bottom-bar" d="M64 47.5a2.5 2.5 0 00-2.5-2.5h-59A2.5 2.5 0 000 47.5v5A2.5 2.5 0 002.5 55h59a2.5 2.5 0 002.5-2.5v-5z"/></g></svg>
+
+      </a>
+    </div>
+    <nav role="navigation" class="navbar__menu">
+        <a class="navbar__menu__item navbar__menu__item--active" href="/">
+          Blog
+        </a>
+    </nav>
+  </div>
+</div>
+
+        <div class="content">
+            
+
+<div class="header header--bg-image" style="background-image: url(https://picsum.photos/1000/300?random=Hello-blog)">
+  <div class="header__content">
+    <div class="wrapper">
+      <h1 class="header__title">Hello blog</h1>
+        <p class="header__subtitle">May 16th, 2020</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper content">
+  <p>Hello, this is just a little test post until I get some actual content on this
+blog. I'm gonna make use of this post to test some features: Typography, syntax
+highlighting, images etc.</p>
+<h2>Typography</h2>
+<p>This is a regular paragraph with some <strong>bolded</strong> and <em>italic</em> text</p>
+<p>Nam in cursus velit, at luctus nulla. Etiam vestibulum suscipit elit in
+tincidunt.
+Aliquam tempor pharetra enim, auctor maximus tortor luctus tempor. Class aptent
+taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+Fusce vestibulum ligula sem, ac dignissim diam facilisis eu. Vestibulum ut luctus ipsum. Nulla vehicula aliquam libero eu ultricies.</p>
+<h3>H3</h3>
+<h4>H4</h4>
+<h5>H5</h5>
+<h2>Lists</h2>
+<ul>
+<li>Test</li>
+<li>List
+<ul>
+<li>Sub item</li>
+</ul>
+</li>
+<li>Here</li>
+</ul>
+<h2>Images</h2>
+<p>TODO</p>
+<h2>Code</h2>
+<p>Here is some examples of syntax highlighting:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token constant">THIS_IS_A_CONSTANT</span> <span class="token operator">=</span> <span class="token number">5.0</span><span class="token punctuation">;</span><br><br><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">bar</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span> bar <span class="token operator">*</span> <span class="token number">20</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>  layout<span class="token operator">:</span> <span class="token string">"post.njk"</span><span class="token punctuation">,</span><br>  test<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// This is a comment</span><br>  eleventyComputed<span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token function-variable function">thumbnail</span><span class="token operator">:</span> <span class="token parameter">data</span> <span class="token operator">=></span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://picsum.photos/1000/300?random=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>data<span class="token punctuation">.</span>title<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span> <span class="token string">"-"</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span><br>    <span class="token function-variable function">permalink</span><span class="token operator">:</span> <span class="token parameter">data</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>      <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span>permalink<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token keyword">return</span> data<span class="token punctuation">.</span>permalink<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br><br>      <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/blog/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">moment</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>page<span class="token punctuation">.</span>date<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"YYYY/MM/DD"</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">slugify</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>title<span class="token punctuation">,</span> <span class="token punctuation">{</span> lower<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/index.html</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<pre class="language-css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span><br>  <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #000 <span class="token important">!important</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+
+
+  
+  
+
+  <hr />
+
+  
+
+  
+    
+  
+  
+    
+  
+</div>
+
+        </div>
+        <script type="text/javascript" src="/assets/js/main.js"></script>
+        <div class="footer">
+    <div class="wrapper">
+        <h2 class="footer__social__title">Find me on</h2>
+        <div class="footer__social">
+            
+                <a class="footer__social__link" href="https://twitter.com/svampson">Twitter</a>
+            
+                <a class="footer__social__link" href="https://github.com/PaddyCo">Github</a>
+            
+                <a class="footer__social__link" href="https://twitch.tv/ItsPaddyCo">Twitch</a>
+            
+        </div>
+
+        <span class="footer__copyright">Site content is © 2020 me. Code is open source and available <a href="TODO ">here</a></span>
+    </div>
+</div>
+
+    </body>
+</html>
